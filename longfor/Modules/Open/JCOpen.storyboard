@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Open View Controller-->
+        <scene sceneID="75B-Kt-Ddm">
+            <objects>
+                <viewController storyboardIdentifier="JCOpenViewController" id="enD-EU-TGe" customClass="JCOpenViewController" customModule="longfor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPx-Dw-0Yl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egD-TA-mNA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="egD-TA-mNA" secondAttribute="height" multiplier="125:66" id="0gA-HC-5as"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jcopen_back" translatesAutoresizingMaskIntoConstraints="NO" id="BWh-cQ-D89">
+                                <rect key="frame" x="0.0" y="198" width="375" height="271"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGh-nc-UWs">
+                                <rect key="frame" x="0.0" y="469" width="375" height="198"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGq-wO-R8R">
+                                        <rect key="frame" x="20" y="156.5" width="335" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TGq-wO-R8R" secondAttribute="bottom" constant="20" id="03k-Uq-5vd"/>
+                                    <constraint firstAttribute="trailing" secondItem="TGq-wO-R8R" secondAttribute="trailing" constant="20" id="3tI-uM-Ae8"/>
+                                    <constraint firstItem="TGq-wO-R8R" firstAttribute="leading" secondItem="TGh-nc-UWs" secondAttribute="leading" constant="20" id="hkM-wA-zm6"/>
+                                    <constraint firstAttribute="width" secondItem="TGh-nc-UWs" secondAttribute="height" multiplier="125:66" id="zln-Kz-7nB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TGh-nc-UWs" firstAttribute="leading" secondItem="KxW-ah-31M" secondAttribute="leading" id="2rh-dT-Sly"/>
+                            <constraint firstItem="egD-TA-mNA" firstAttribute="trailing" secondItem="KxW-ah-31M" secondAttribute="trailing" id="GSR-fR-8rX"/>
+                            <constraint firstItem="egD-TA-mNA" firstAttribute="top" secondItem="KxW-ah-31M" secondAttribute="top" id="Iwq-E4-h6Y"/>
+                            <constraint firstItem="BWh-cQ-D89" firstAttribute="leading" secondItem="KxW-ah-31M" secondAttribute="leading" id="J8G-zV-H7M"/>
+                            <constraint firstItem="KxW-ah-31M" firstAttribute="trailing" secondItem="BWh-cQ-D89" secondAttribute="trailing" id="Tc3-qn-JPF"/>
+                            <constraint firstItem="TGh-nc-UWs" firstAttribute="bottom" secondItem="KxW-ah-31M" secondAttribute="bottom" id="TgU-V4-995"/>
+                            <constraint firstItem="egD-TA-mNA" firstAttribute="leading" secondItem="KxW-ah-31M" secondAttribute="leading" id="YDX-aK-Emj"/>
+                            <constraint firstItem="TGh-nc-UWs" firstAttribute="trailing" secondItem="KxW-ah-31M" secondAttribute="trailing" id="hO8-kT-uuQ"/>
+                            <constraint firstItem="TGh-nc-UWs" firstAttribute="top" secondItem="BWh-cQ-D89" secondAttribute="bottom" id="sEM-hA-R0e"/>
+                            <constraint firstItem="BWh-cQ-D89" firstAttribute="top" secondItem="egD-TA-mNA" secondAttribute="bottom" id="twB-fp-cFe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KxW-ah-31M"/>
+                    </view>
+                    <connections>
+                        <outlet property="uiTips" destination="TGq-wO-R8R" id="Iru-yY-P2E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRB-7a-Xrp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jcopen_back" width="232" height="270"/>
+    </resources>
+</document>
