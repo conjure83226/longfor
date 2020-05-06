@@ -5,4 +5,5 @@
   Created by jack on 2020/5/3.
   Copyright © 2020 home. All rights reserved.
 */
-OpenTips = "Copyright © 2020 home. All rights reserved.(TestProject)";
+OpenTitle = "Copyright © 2020 home.\nAll rights reserved.(TestProject)";
+HomeTitle = "Mobile Data Usage";

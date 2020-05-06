@@ -14,19 +14,30 @@ class JCOpenViewController: UIViewController {
     
     public class func show(nc: UINavigationController?) {
         if let nc = nc {
-            let vc = UIStoryboard.init(name: "JCOpen", bundle: Bundle.main).instantiateViewController(withIdentifier: "JCOpenViewController")
+            let sb = UIStoryboard.init(name: "JCOpen", bundle: Bundle.main)
+            let vc = sb.instantiateViewController(withIdentifier: "JCOpenViewController")
             nc.pushViewController(vc, animated: false)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        uiTips.text = NSLocalizedString("OpenTips", comment: "启动文本")
+        uiTips.text = NSLocalizedString("OpenTitle", comment: "启动文本")
+        uiTips.alpha = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.3, animations: {
+            self.uiTips.alpha = 1
+        }) { (Bool) in
+            self.navigationController?.popViewController(animated: JCAnimatorAlphaAndScale.animator(target: self.navigationController, animated: true))
+        }
     }
     
 }

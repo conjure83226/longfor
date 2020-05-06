@@ -13,6 +13,12 @@ class JCHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         JCOpenViewController.show(nc: self.navigationController)
+        self.navigationItem.title = NSLocalizedString("HomeTitle", comment: "主页标题")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
 }
