@@ -104,7 +104,8 @@ class JCHomeViewController: UIViewController, UITableViewDelegate, UITableViewDa
             num.text = item["total"] as? String
         }
         if let btn = cell.contentView.viewWithTag(102) as? UIButton {
-            btn.isHidden = item["isDown"] as? Bool ?? true
+            let hide = item["isDown"] as? Bool ?? false
+            btn.isHidden = !hide
         }
         return cell
     }
