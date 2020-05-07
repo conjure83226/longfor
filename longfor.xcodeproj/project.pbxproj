@@ -16,6 +16,10 @@
 		040D09C3245DD31A005C9627 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 040D09C5245DD31A005C9627 /* Localizable.strings */; };
 		040D09C9246305F3005C9627 /* JCBaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D09C8246305F3005C9627 /* JCBaseAnimator.swift */; };
 		040D09CB246313CB005C9627 /* JCAnimatorAlphaAndScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D09CA246313CB005C9627 /* JCAnimatorAlphaAndScale.swift */; };
+		040D09CD24631BE4005C9627 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D09CC24631BE4005C9627 /* app.swift */; };
+		040D09CF24631C1B005C9627 /* JCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D09CE24631C1B005C9627 /* JCRequest.swift */; };
+		040D09D124631C2F005C9627 /* JCRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D09D024631C2F005C9627 /* JCRequestData.swift */; };
+		040D09D324631C43005C9627 /* JCRequestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D09D224631C43005C9627 /* JCRequestSetup.swift */; };
 		04499CDE245D61E900D85254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04499CDD245D61E900D85254 /* AppDelegate.swift */; };
 		04499CE7245D61EB00D85254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04499CE6245D61EB00D85254 /* Assets.xcassets */; };
 		04499CEA245D61EB00D85254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04499CE8245D61EB00D85254 /* LaunchScreen.storyboard */; };
@@ -57,6 +61,10 @@
 		040D09C6245DD31C005C9627 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		040D09C8246305F3005C9627 /* JCBaseAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCBaseAnimator.swift; sourceTree = "<group>"; };
 		040D09CA246313CB005C9627 /* JCAnimatorAlphaAndScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCAnimatorAlphaAndScale.swift; sourceTree = "<group>"; };
+		040D09CC24631BE4005C9627 /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
+		040D09CE24631C1B005C9627 /* JCRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequest.swift; sourceTree = "<group>"; };
+		040D09D024631C2F005C9627 /* JCRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestData.swift; sourceTree = "<group>"; };
+		040D09D224631C43005C9627 /* JCRequestSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRequestSetup.swift; sourceTree = "<group>"; };
 		04499CDA245D61E900D85254 /* longfor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = longfor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04499CDD245D61E900D85254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04499CE6245D61EB00D85254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +126,10 @@
 		040D09A7245DC7AA005C9627 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				040D09CC24631BE4005C9627 /* app.swift */,
+				040D09CE24631C1B005C9627 /* JCRequest.swift */,
+				040D09D024631C2F005C9627 /* JCRequestData.swift */,
+				040D09D224631C43005C9627 /* JCRequestSetup.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -453,9 +465,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				040D09CB246313CB005C9627 /* JCAnimatorAlphaAndScale.swift in Sources */,
+				040D09CF24631C1B005C9627 /* JCRequest.swift in Sources */,
+				040D09CD24631BE4005C9627 /* app.swift in Sources */,
 				04499CDE245D61E900D85254 /* AppDelegate.swift in Sources */,
 				040D09C0245DD1E3005C9627 /* JCHomeViewController.swift in Sources */,
+				040D09D324631C43005C9627 /* JCRequestSetup.swift in Sources */,
 				040D09C9246305F3005C9627 /* JCBaseAnimator.swift in Sources */,
+				040D09D124631C2F005C9627 /* JCRequestData.swift in Sources */,
 				040D09B8245DCC9B005C9627 /* JCOpenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
